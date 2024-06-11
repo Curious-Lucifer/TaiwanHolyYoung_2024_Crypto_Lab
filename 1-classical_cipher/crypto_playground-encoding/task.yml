@@ -5,11 +5,9 @@ description: |
 
   `NDY0YzQxNDc3YjQyNjE3MzY1MzYzNDVmNjk3MzVmNmQ2ZjcyNjU1ZjZmNjY3NDY1NmU1Zjc1NzM2NTY0NWY2OTZlNWY3MjY1NjE2YzY5NzQ3OTdk`
 author: Curious
-connection_info: http://{ip}:50000/encoding
+connection_info: http://{server}:50000/encoding
 flag: FLAG{Base64_is_more_often_used_in_reality}
 
 type: standard
 value: 500
 state: visible
-
-canonical_name: classical-cipher-encoding

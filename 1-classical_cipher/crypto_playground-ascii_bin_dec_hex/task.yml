@@ -9,7 +9,7 @@ description: |
 
   `6e 76 65 72 73 69 6f 6e 7e 7e 7e 7d`
 author: Curious
-connection_info: http://{ip}:50000
+connection_info: http://{server}:50000
 flag: FLAG{Just_some_conversion~~~}
 
 type: standard

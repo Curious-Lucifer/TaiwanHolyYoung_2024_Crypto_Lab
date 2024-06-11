@@ -35,5 +35,3 @@ hints:
 type: standard
 value: 500
 state: visible
-
-canonical_name: symmetric-cipher-aes

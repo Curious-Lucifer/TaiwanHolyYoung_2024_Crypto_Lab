@@ -7,11 +7,9 @@ description: |
 
   操作完成後就可以繳交這題的 flag : `FLAG{w->www_AGAIN!!!}`
 author: Curious
-connection_info: http://{ip}:50000/rsa/rsa-signature
+connection_info: http://{server}:50000/rsa/rsa-signature
 flag: FLAG{w->www_AGAIN!!!}
 
 type: standard
 value: 500
 state: visible
-
-canonical_name: asymmetric-cipher-crypto-playground-rsa-signature

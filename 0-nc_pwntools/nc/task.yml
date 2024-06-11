@@ -1,7 +1,7 @@
 name: nc
 category: 0 - nc & Pwntools
 author: Curious
-connection_info: nc {ip} 10000
+connection_info: nc {server} 10000
 flag: 'FLAG{Great!_You_learned_how_to_use_`nc`!}'
 distfiles:
   - ./chal

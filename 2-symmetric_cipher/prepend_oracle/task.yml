@@ -5,7 +5,7 @@ description: |
 
   另外這題的 Flag 是 `FLAG{SUS}`
 author: Curious
-connection_info: http://{ip}:50000/aes/aes-ecb-mode
+connection_info: http://{server}:50000/aes/aes-ecb-mode
 flag: FLAG{SUS}
 distfiles:
   - ./chal

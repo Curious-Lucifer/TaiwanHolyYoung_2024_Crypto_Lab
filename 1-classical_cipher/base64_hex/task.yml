@@ -28,5 +28,3 @@ hints:
 type: standard
 value: 500
 state: visible
-
-canonical_name: classical-cipher-base64-hex

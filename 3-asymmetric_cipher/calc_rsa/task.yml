@@ -13,5 +13,3 @@ flag: FLAG{^_^}
 type: standard
 value: 500
 state: visible
-
-canonical_name: asymmetric-cipher-calc-rsa

@@ -3,7 +3,7 @@ category: 2 - Symmetric Cipher
 description: |
   這一題的 `server.py` 和 Prepend Oracle 一模一樣，而且確定 flag 最長只會是 16 bytes，用 Python 寫一個 script 來解吧
 author: Curious
-connection_info: nc {ip} 12001
+connection_info: nc {server} 12001
 flag: FLAG{Try_Harder}
 distfiles:
   - ./chal

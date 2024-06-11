@@ -2,25 +2,16 @@
 
 import os
 
-from dotenv import load_dotenv
-
-from CTFdTools.challenge import Challenge
 from CTFdTools.ctfd import CTFd
+from CTFdTools.challenge import Challenge
 
 
-load_dotenv('.env.dev')
-ctfd = CTFd(os.getenv('BASE_URL'), os.getenv('API_KEY'))
+ctfd = CTFd('.env.dev')
 
-challenges_path = []
+challenges: list[Challenge] = []
 for root, _, files in os.walk('.'):
     if 'task.yml' in files:
-        challenges_path.append(root)
-
-challenges = [
-    Challenge(challenge_path, os.getenv('CHALLENGE_SERVER'), ctfd)
-    for challenge_path in challenges_path
-]
+        challenges.append(Challenge(root, ctfd))
 
 for challenge in challenges:
-    challenge.load_yaml()
-    challenge.create()
+    challenge.post()

@@ -7,11 +7,9 @@ description: |
   - `key` : `62bdc4885ca8a8be1d1e8826a2187528`
   - `iv` : `7ae66a4b7e87a6d374ce66e73a112bf0`
 author: Curious
-connection_info: http://{ip}:50000/aes/aes-cbc-mode
+connection_info: http://{server}:50000/aes/aes-cbc-mode
 flag: FLAG{AES_CBC_Mode_needs_padding_too!}
 
 type: standard
 value: 500
 state: visible
-
-canonical_name: symmetric-cipher-crypto-playground-aes-cbc-mode

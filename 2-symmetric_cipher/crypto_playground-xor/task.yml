@@ -9,11 +9,9 @@ description: |
 
   求 `FLAG`
 author: Curious
-connection_info: http://{ip}:50000/aes/xor
+connection_info: http://{server}:50000/aes/xor
 flag: FLAG{Do_you_know_`GF(2)`?}
 
 type: standard
 value: 500
 state: visible
-
-canonical_name: symmetric-cipher-crypto-playground-xor

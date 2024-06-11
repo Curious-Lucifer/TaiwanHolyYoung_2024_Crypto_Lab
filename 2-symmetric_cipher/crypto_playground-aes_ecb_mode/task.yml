@@ -6,11 +6,9 @@ description: |
   - `cipher` : `8d8f543098319a54c0c44c265a50bc2f3ff33f67cc44c6c4f992bdc0b0adcbc86aece1f2f0b59772a59c5060d9669d0b`
   - `key` : `872b456c9b4e3b320555e62b6ad9ee32`
 author: Curious
-connection_info: http://{ip}:50000/aes/aes-ecb-mode
+connection_info: http://{server}:50000/aes/aes-ecb-mode
 flag: FLAG{Plain's_length_needs_to_be_multiple_of_16}
 
 type: standard
 value: 500
 state: visible
-
-canonical_name: symmetric-cipher-crypto-playground-aes-ecb-mode

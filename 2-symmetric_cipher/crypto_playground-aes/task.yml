@@ -6,11 +6,10 @@ description: |
   - `cipher` : `beb500cb0298d5a427d3c6532fa0d88e`
   - `key` : `e4cb2aa8ff51a7209a923d59932b5841`
 author: Curious
-connection_info: http://{ip}:50000/aes/aes
+connection_info: http://{server}:50000/aes/aes
 flag: FLAG{A--E--S}
 
 type: standard
 value: 500
 state: visible
 
-canonical_name: symmetric-cipher-crypto-playground-aes

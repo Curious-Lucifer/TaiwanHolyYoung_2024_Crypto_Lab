@@ -14,5 +14,3 @@ hints:
 type: standard
 value: 500
 state: visible
-
-canonical_name: asymmetric-cipher-baby-rsa

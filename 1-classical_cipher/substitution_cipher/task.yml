@@ -3,12 +3,12 @@ category: 1 - Classical Cipher
 description: |
   把 `cipher.txt` 裡面的內容解開之後丟到 Crypto Playground 的 Get Hash Flag 裡拿 flag
 author: Curious
-connection_info: http://{ip}:50000/get-hash-flag
+connection_info: http://{server}:50000/get-hash-flag
 flag: FLAG{799ff92f4a72f5092492e29edc8f40be782aa7a7653778b70fa06f9899318855}
 distfiles:
   - ./dist
 hints:
-  - https://www.dcode.fr/monoalphabetic-substitution
+  - https://www.guballa.de/substitution-solver
 
 type: standard
 value: 500

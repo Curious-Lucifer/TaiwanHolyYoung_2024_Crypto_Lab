@@ -1,7 +1,7 @@
 name: Count
 category: 0 - nc & Pwntools
 author: Curious
-connection_info: nc {ip} 10001
+connection_info: nc {server} 10001
 flag: FLAG{You_can_do_it_manually,_but_...}
 distfiles:
   - ./chal
