@@ -1,0 +1,17 @@
+name: Crypto Playground - Calc RSA With Hand
+category: 3 - Asymmetric Cipher
+description: |
+  收先嘗試照著 Crypto Playground 的 RSA 裡面講的步驟一步一步（每一步都要讓右邊的檢查通過才能繼續下一步）把字元 `w` 加密後解密
+
+  接著嘗試把要加密的東西從 `w` 變成 `www` 後再操作一次
+
+  操作完成後就可以繳交這題的 flag : `FLAG{w->www}`
+author: Curious
+connection_info: http://{ip}:50000/rsa/rsa
+flag: FLAG{w->www}
+
+type: standard
+value: 500
+state: visible
+
+canonical_name: asymmetric-cipher-crypto-playground-calc-rsa-with-hand

@@ -1,0 +1,203 @@
+{% extends "base.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="/static/style/index.css">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+{% endblock %}
+
+{% block active_rsa %}active{% endblock %}
+
+{% block body %}
+<div class="container-fluid d-flex justify-content-start gap-50 m-3 p-3">
+  <div class="mx-auto">
+    <h2 class="text-center mb-4">RSA</h2>
+    <ol class="list-group list-group-numbered width-800 mx-auto">
+      <li class="list-group-item">
+        <p class="d-inline-block m-0">找到兩個互不相等的質數 \(p\) 和 \(q\)</p>
+        <div class="d-flex flex-row justify-content-start align-items-center my-3 px-4 gap-3">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="row">
+                <label class="col-sm-2 col-form-label">\(p\)</label>
+                <div class="col-sm-10 ps-0">
+                  <input type="number" class="form-control" autocomplete="off" id="p">
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <label class="col-sm-2 col-form-label">\(q\)</label>
+                <div class="col-sm-10 ps-0">
+                  <input type="number" class="form-control" autocomplete="off" id="q">
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="list-group">
+            <li class="list-group-item py-1 d-flex align-items-center gap-1">
+              <input class="form-check-input me-1" type="checkbox" disabled id="p-is-prime">
+              \(p\) 是質數
+            </li>
+            <li class="list-group-item py-1 d-flex align-items-center gap-1">
+              <input class="form-check-input me-1" type="checkbox" disabled id="q-is-prime">
+              \(q\) 是質數
+            </li>
+            <li class="list-group-item py-1 d-flex align-items-center gap-1">
+              <input class="form-check-input me-1" type="checkbox" disabled id="p-equal-q">
+              \(p\) 不等於 \(q\) 
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <p class="d-inline-block m-0">計算 \(n = p \cdot q\) 和 \(\operatorname{\varphi}(n) = (p - 1) \cdot (q - 1)\)</p>
+        <div class="d-flex flex-row justify-content-start align-items-center my-3 px-4 gap-3">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="row">
+                <label class="col-sm-3 col-form-label">\(n\)</label>
+                <div class="col-sm-9 ps-0">
+                  <input type="number" class="form-control" autocomplete="off" id="n">
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <label class="col-sm-3 col-form-label">\(\operatorname{\varphi}(n)\)</label>
+                <div class="col-sm-9 ps-0">
+                  <input type="number" class="form-control" autocomplete="off" id="phin">
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="list-group">
+            <li class="list-group-item py-1 d-flex align-items-center gap-1">
+              <input class="form-check-input me-1" type="checkbox" disabled id="n-correct">
+              \(n = p \cdot q\)
+            </li>
+            <li class="list-group-item py-1 d-flex align-items-center gap-1">
+              <input class="form-check-input me-1" type="checkbox" disabled id="phin-correct">
+              \(\operatorname{\varphi}(n) = (p - 1) \cdot (q - 1)\)
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <p class="d-inline-block m-0">找 \(e\)</p>
+        <div class="d-flex flex-row justify-content-start align-items-center my-3 px-4 gap-3">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="row">
+                <label class="col-sm-2 col-form-label">\(e\)</label>
+                <div class="col-sm-10 ps-0">
+                  <input type="number" class="form-control" autocomplete="off" id="e">
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="list-group">
+            <li class="list-group-item py-1 d-flex align-items-center gap-1">
+              <input class="form-check-input me-1" type="checkbox" disabled id="e-range-check">
+              \(1 < e < \operatorname{\varphi}(n)\)
+            </li>
+            <li class="list-group-item py-1 d-flex align-items-center gap-1">
+              <input class="form-check-input me-1" type="checkbox" disabled id="e-value-check">
+              \(\operatorname{gcd}(e, \operatorname{\varphi}(n)) = 1\)
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <p class="d-inline-block m-0">計算 \(d \equiv e^{-1} \pmod {\operatorname{\varphi}(n)}\)</p>
+        <div class="d-flex flex-row justify-content-start align-items-center my-3 px-4 gap-3">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="row">
+                <label class="col-sm-2 col-form-label">\(d\)</label>
+                <div class="col-sm-10 ps-0">
+                  <input type="number" class="form-control" autocomplete="off" id="d">
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="list-group">
+            <li class="list-group-item py-1 d-flex align-items-center gap-1">
+              <input class="form-check-input me-1" type="checkbox" disabled id="d-value-check">
+              \(d \equiv e^{-1} \pmod {\operatorname{\varphi}(n)}\)
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <p class="d-inline-block m-0">把要加密的字串轉成數字 \(m\)</p>
+        <div class="d-flex flex-row justify-content-start align-items-center my-3 px-4 gap-3">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="row">
+                <label class="col-sm-2 col-form-label">\(m\)</label>
+                <div class="col-sm-10 ps-0">
+                  <input type="number" class="form-control" autocomplete="off" id="m">
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="list-group">
+            <li class="list-group-item py-1 d-flex align-items-center gap-1">
+              <input class="form-check-input me-1" type="checkbox" disabled id="m-value-check">
+              \(0 < m < n\)
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <p class="d-inline-block m-0">把 \(m\) 加密成 \(c\)</p>
+        <div class="d-flex flex-row justify-content-start align-items-center my-3 px-4 gap-3">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="row">
+                <label class="col-sm-2 col-form-label">\(c\)</label>
+                <div class="col-sm-10 ps-0">
+                  <input type="number" class="form-control" autocomplete="off" id="c">
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="list-group">
+            <li class="list-group-item py-1 d-flex align-items-center gap-1">
+              <input class="form-check-input me-1" type="checkbox" disabled id="c-value-check">
+              \(c \equiv m ^ e \pmod n\)
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <p class="d-inline-block m-0">把 \(c\) 解密成 \(mm\)</p>
+        <div class="d-flex flex-row justify-content-start align-items-center my-3 px-4 gap-3">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="row">
+                <label class="col-sm-3 col-form-label">\(mm\)</label>
+                <div class="col-sm-9 ps-0">
+                  <input type="number" class="form-control" autocomplete="off" id="mm">
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="list-group">
+            <li class="list-group-item py-1 d-flex align-items-center gap-1">
+              <input class="form-check-input me-1" type="checkbox" disabled id="mm-value-check">
+              \(mm \equiv c ^ d \pmod n\)
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ol>
+  </div>
+</div>
+{% endblock %}
+
+{% block script %}
+<script src="/static/js/utils.js"></script>
+<script src="/static/js/rsa.js"></script>
+{% endblock %}

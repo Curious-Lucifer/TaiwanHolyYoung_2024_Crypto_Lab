@@ -1,0 +1,5 @@
+services: 
+  nc-pwntools-count: 
+    build: .
+    ports: 
+      - 10001:20000

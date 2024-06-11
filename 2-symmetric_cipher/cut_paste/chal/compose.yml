@@ -1,0 +1,5 @@
+services:
+  symmetric-cipher-cut-paste:
+    build: .
+    ports:
+      - 12000:5000

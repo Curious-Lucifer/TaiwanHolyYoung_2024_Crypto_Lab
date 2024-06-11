@@ -1,0 +1,1 @@
+FLAG = 'FLAG{why_do_you_have_so_much_money???}'

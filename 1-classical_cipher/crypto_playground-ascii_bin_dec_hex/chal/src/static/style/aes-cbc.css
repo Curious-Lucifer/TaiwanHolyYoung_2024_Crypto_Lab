@@ -1,0 +1,236 @@
+
+.width-250 {
+  width: 250;
+}
+
+input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #888;
+  border-radius: 3px;
+  font-family: monospace;
+  font-size: 12px;
+  padding: 4px 8px;
+  text-align: center;
+}
+
+label {
+  width: 100%;
+  text-align: center;
+}
+
+.auto-generate-btn {
+  font-size: 12px;
+  padding: 4px 10px;
+}
+
+input:focus {
+  border-color: #333;
+}
+
+input:disabled {
+  background-color: #eee;
+  color: #000;
+}
+
+:is(.aes-cbc-encrypt-container, .aes-cbc-decrypt-container) h2 {
+  font-size: 24px;
+}
+
+:is(.aes-cbc-encrypt-container, .aes-cbc-decrypt-container)>div {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-self: start;
+  position: relative;
+}
+
+:is(.aes-cbc-encrypt-container, .aes-cbc-decrypt-container) .block {
+  position: relative;
+  width: 600px;
+  height: 380px;
+}
+
+:is(.aes-cbc-encrypt-container, .aes-cbc-decrypt-container) .non-first-block {
+  width: 300px;
+}
+
+:is(.aes-cbc-encrypt-container, .aes-cbc-decrypt-container) .non-first-block>div, 
+:is(.aes-cbc-encrypt-container, .aes-cbc-decrypt-container) .non-first-block>svg {
+  left: 0 !important;
+}
+
+.aes-cbc-encrypt-container .block .plain-container, 
+.aes-cbc-decrypt-container .block .cipher-container {
+  position: absolute;
+  top: 24px;
+  left: 300px;
+}
+
+.aes-cbc-encrypt-container .block .iv-container {
+  position: absolute;
+  top: 63px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aes-cbc-decrypt-container .block .iv-container {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aes-cbc-encrypt-container .block .xor-plain-container {
+  position: absolute;
+  top: 125px;
+  left: 300px;
+}
+
+.aes-cbc-decrypt-container .block .xor-plain-container {
+  position: absolute;
+  top: 232px;
+  left: 300px;
+}
+
+.aes-cbc-encrypt-container .block .key-container {
+  position: absolute;
+  top: 180px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aes-cbc-decrypt-container .block .key-container {
+  position: absolute;
+  top: 119px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aes-cbc-encrypt-container .block .encrypt-block {
+  border: 1px solid #333;
+  border-radius: 3px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 173px;
+  left: 300px;
+}
+
+.aes-cbc-decrypt-container .block .decrypt-block {
+  border: 1px solid #333;
+  border-radius: 3px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 112px;
+  left: 300px;
+}
+
+.aes-cbc-encrypt-container .block .cipher-container, 
+.aes-cbc-decrypt-container .block .plain-container {
+  position: absolute;
+  top: 305px;
+  left: 300px;
+}
+
+.aes-cbc-encrypt-container .block .graph1 {
+  position: absolute;
+  top: 80px;
+  left: 250px;
+}
+
+.aes-cbc-decrypt-container .block .graph1 {
+  position: absolute;
+  top: 52px;
+  left: 250px;
+  z-index: -1;
+}
+
+.aes-cbc-encrypt-container .block .graph2 {
+  position: absolute;
+  top: 153px;
+  left: 300px;
+}
+
+.aes-cbc-decrypt-container .block .graph2 {
+  position: absolute;
+  top: 212px;
+  left: 300px;
+}
+
+.aes-cbc-encrypt-container .block .graph3 {
+  position: absolute;
+  top: 208px;
+  left: 250px;
+}
+
+.aes-cbc-decrypt-container .block .graph3 {
+  position: absolute;
+  top: 147px;
+  left: 250px;
+}
+
+.aes-cbc-encrypt-container .block .graph4 {
+  position: absolute;
+  top: 273px;
+  left: 300px;
+}
+
+.aes-cbc-decrypt-container .block .graph4 {
+  position: absolute;
+  top: 80px;
+  left: 300px;
+}
+
+.aes-cbc-encrypt-container .block .graph5 {
+  position: absolute;
+  top: 80px;
+  left: 0;
+}
+
+.aes-cbc-decrypt-container .block .graph5 {
+  position: absolute;
+  top: 260px;
+  left: 0;
+}
+
+.aes-cbc-encrypt-container>div>.graph1 {
+  position: absolute;
+  top: 80px;
+  left: 550px;
+  z-index: -1;
+}
+
+.aes-cbc-decrypt-container>div>.graph1 {
+  position: absolute;
+  top: 52px;
+  left: 550px;
+  z-index: -1;
+}
+
+.aes-cbc-encrypt-container>div>.graph2 {
+  position: absolute;
+  top: 80px;
+  left: 850px;
+  z-index: -1;
+}
+
+.aes-cbc-decrypt-container>div>.graph2 {
+  position: absolute;
+  top: 52px;
+  left: 850px;
+  z-index: -1;
+}

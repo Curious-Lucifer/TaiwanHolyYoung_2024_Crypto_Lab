@@ -1,0 +1,5 @@
+services:
+  symmetric-cipher-prepend-oracle:
+    build: .
+    ports:
+      - 12001:20000

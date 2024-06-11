@@ -1,0 +1,16 @@
+name: nc
+category: 0 - nc & Pwntools
+author: Curious
+connection_info: nc {ip} 10000
+flag: 'FLAG{Great!_You_learned_how_to_use_`nc`!}'
+distfiles:
+  - ./chal
+  - ./dist
+
+type: standard
+value: 500
+state: visible
+
+canonical_name: nc-pwntools-nc
+
+compose: ./chal/compose.yml

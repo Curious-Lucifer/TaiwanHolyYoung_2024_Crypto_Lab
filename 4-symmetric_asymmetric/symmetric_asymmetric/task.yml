@@ -1,0 +1,16 @@
+name: Symmetric & Asymmetric
+category: 4 - Symmetric & Asymmetric
+author: Curious
+connection_info: nc {ip} 14000
+flag: FLAG{It's_just_a_simple_system,_but_it's_actually_a_lot_more_complicated!}
+distfiles:
+  - ./chal
+  - ./dist
+
+type: standard
+value: 500
+state: visible
+
+canonical_name: symmetric-asymmetric-symmetric-asymmetric
+
+compose: ./chal/compose.yml

@@ -1,0 +1,16 @@
+name: Guess
+category: 0 - nc & Pwntools
+author: Curious
+connection_info: nc {ip} 10002
+flag: FLAG{Oh_No_MY_SECRET!!!}
+distfiles:
+  - ./chal
+  - ./dist
+
+type: standard
+value: 500
+state: visible
+
+canonical_name: nc-pwntools-guess
+
+compose: ./chal/compose.yml

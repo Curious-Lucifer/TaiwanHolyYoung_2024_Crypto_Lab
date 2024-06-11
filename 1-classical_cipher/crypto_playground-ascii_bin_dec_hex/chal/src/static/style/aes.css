@@ -1,0 +1,150 @@
+
+.aes-encrypt-container, .aes-decrypt-container {
+  position: relative;
+  width: 600px;
+  height: 320px;
+}
+
+:is(.aes-encrypt-container, .aes-decrypt-container) h2 {
+  font-size: 24px;
+}
+
+.aes-encrypt-container .plain-container, 
+.aes-decrypt-container .cipher-container {
+  width: 250px;
+  position: absolute;
+  top: 24px;
+  left: 300px;
+}
+
+.aes-encrypt-container .plain-container label, 
+.aes-decrypt-container .cipher-container label {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+.aes-encrypt-container .plain-container input, 
+.aes-decrypt-container .cipher-container input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #888;
+  border-radius: 3px;
+  font-family: monospace;
+  font-size: 12px;
+  padding: 4px 8px;
+  text-align: center;
+}
+
+.aes-encrypt-container .plain-container input:focus, 
+.aes-decrypt-container .cipher-container input:focus {
+  border-color: #333;
+}
+
+.aes-encrypt-container .key-container, 
+.aes-decrypt-container .key-container {
+  width: 250px;
+  position: absolute;
+  top: 120px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+:is(.aes-encrypt-container, .aes-decrypt-container) .key-container label {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+:is(.aes-encrypt-container, .aes-decrypt-container) .key-container input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #888;
+  border-radius: 3px;
+  font-family: monospace;
+  font-size: 12px;
+  padding: 4px 8px;
+  text-align: center;
+}
+
+:is(.aes-encrypt-container, .aes-decrypt-container) .key-container input:focus {
+  border-color: #333;
+}
+
+:is(.aes-encrypt-container, .aes-decrypt-container) .key-container button {
+  font-size: 12px;
+  padding: 4px 10px;
+  margin-top: 3px;
+}
+
+.aes-encrypt-container .encrypt-block, 
+.aes-decrypt-container .decrypt-block {
+  border: 1px solid #333;
+  border-radius: 3px;
+  width: 250px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 110px;
+  left: 300px;
+}
+
+.aes-encrypt-container .encrypt-block p, 
+.aes-decrypt-container .decrypt-block p {
+  margin: 0;
+}
+
+.aes-encrypt-container .cipher-container, 
+.aes-decrypt-container .plain-container {
+  width: 250px;
+  position: absolute;
+  top: 240px;
+  left: 300px;
+}
+
+.aes-encrypt-container .cipher-container input, 
+.aes-decrypt-container .plain-container input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #333;
+  border-radius: 3px;
+  font-family: monospace;
+  font-size: 12px;
+  padding: 4px 8px;
+  text-align: center;
+}
+
+.aes-encrypt-container .cipher-container input:disabled, 
+.aes-decrypt-container .plain-container input:disabled {
+  background-color: #eee;
+  color: #000;
+}
+
+.aes-encrypt-container .cipher-container label, 
+.aes-decrypt-container .plain-container label {
+  width: 100%;
+  text-align: center;
+  margin-top: 3px;
+}
+
+:is(.aes-encrypt-container, .aes-decrypt-container) .arrow-1 {
+  position: absolute;
+  top: 147px;
+  left: 250px;
+}
+
+:is(.aes-encrypt-container, .aes-decrypt-container) .arrow-2 {
+  position: absolute;
+  top: 78px;
+  left: 300px;
+}
+
+:is(.aes-encrypt-container, .aes-decrypt-container) .arrow-3 {
+  position: absolute;
+  top: 210px;
+  left: 300px;
+}

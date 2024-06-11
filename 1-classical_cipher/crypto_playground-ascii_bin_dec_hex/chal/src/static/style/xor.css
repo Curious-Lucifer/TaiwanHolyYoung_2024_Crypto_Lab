@@ -1,0 +1,81 @@
+
+.xor-container {
+  position: absolute;
+  width: 600px;
+  height: 250px;
+}
+
+.xor-container h2 {
+  font-size: 24px;
+}
+
+.xor-container :is(.message1-container, .message2-container) {
+  width: 250px;
+  position: absolute;
+  top: 24px;
+}
+
+.xor-container .message1-container {
+  left: 0;
+}
+
+.xor-container .message2-container {
+  left: 300px;
+}
+
+.xor-container :is(.message1-container, .message2-container) label {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+.xor-container :is(.message1-container, .message2-container) input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #888;
+  border-radius: 3px;
+  font-family: monospace;
+  font-size: 12px;
+  padding: 4px 8px;
+  text-align: center;
+}
+
+.xor-container :is(.message1-container, .message2-container) input:focus {
+  border-color: #333;
+}
+
+.xor-container .result-container {
+  width: 250px;
+  position: absolute;
+  top: 178px;
+  left: 150px;
+}
+
+.xor-container .result-container input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #333;
+  border-radius: 3px;
+  font-family: monospace;
+  font-size: 12px;
+  padding: 4px 8px;
+  text-align: center;
+}
+
+.xor-container .result-container input:disabled {
+  background-color: #eee;
+  color: #000;
+}
+
+.xor-container .result-container label {
+  width: 100%;
+  text-align: center;
+  margin-top: 3px;
+}
+
+.xor-container .graph {
+  position: absolute;
+  top: 78px;
+  left: 0;
+}
+

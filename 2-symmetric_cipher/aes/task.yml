@@ -1,0 +1,39 @@
+name: AES
+category: 2 - Symmetric Cipher
+description: |
+  寫一段 Python 並用以下的參數解密 `cipher`
+
+  - `cipher` : `75924759583675f4a56c2c322c72be86`
+  - `key` : `77e9ed71d1d4ea27816aa0538c091f14`
+author: Curious
+flag: FLAG{PyCrypt...}
+hints: 
+  - |
+    首先把 `AES` 引入
+
+    ```py
+    from Crypto.Cipher import AES
+    ```
+
+    然後設定 `key`
+
+    ```py
+    key = bytes.fromhex('...')
+    aes = AES.new(key, AES.MODE_ECB)
+    ````
+
+    接者就可以加密/解密了（其中 `plain` 和 `cipher` 都是 bytes 型別）
+
+    ```py
+    cipher = aes.encrypt(plain)
+
+    # or 
+
+    plain = aes.decrypt(cipher)
+    ```
+
+type: standard
+value: 500
+state: visible
+
+canonical_name: symmetric-cipher-aes

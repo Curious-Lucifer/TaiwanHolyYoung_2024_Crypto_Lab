@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="/static/style/index.css">
+<link rel="stylesheet" href="/static/style/aes.css">
+{% endblock %}
+
+{% block active_aes %}active{% endblock %}
+
+{% block body %}
+<div class="container-fluid d-flex justify-content-start gap-50 m-3 p-3">
+  <div class="aes-encrypt-container">
+    <h2>AES Encrypt</h2>
+
+    <div class="plain-container">
+      <label>Plain</label>
+      <input type="text" id="encrypt-plain" autocomplete="off">
+    </div>
+
+    <svg height="28" width="50" xmlns="http://www.w3.org/2000/svg" class="arrow-1">
+      <line x1="5" y1="14" x2="45" y2="14" style="stroke: #000; stroke-width: 1" />
+      <line x1="40" y1="12" x2="45" y2="14" style="stroke: #000; stroke-width: 1" />
+      <line x1="40" y1="16" x2="45" y2="14" style="stroke: #000; stroke-width: 1" />
+    </svg>
+
+    <div class="key-container">
+      <label>Key</label>
+      <input type="text" id="encrypt-key" autocomplete="off">
+      <button class="btn btn-outline-secondary" id="auto-generate-encrypt-key-btn">Auto Generate</button>
+    </div>
+
+    <svg height="32" width="250" xmlns="http://www.w3.org/2000/svg" class="arrow-2">
+      <line x1="125" y1="5" x2="125" y2="27" style="stroke: #000; stroke-width: 1" />
+      <line x1="123" y1="22" x2="125" y2="27" style="stroke: #000; stroke-width: 1" />
+      <line x1="127" y1="22" x2="125" y2="27" style="stroke: #000; stroke-width: 1" />
+    </svg>
+
+    <div class="encrypt-block">
+      <p>Encrypt</p>
+    </div>
+
+    <svg height="32" width="250" xmlns="http://www.w3.org/2000/svg" class="arrow-3">
+      <line x1="125" y1="5" x2="125" y2="27" style="stroke: #000; stroke-width: 1" />
+      <line x1="123" y1="22" x2="125" y2="27" style="stroke: #000; stroke-width: 1" />
+      <line x1="127" y1="22" x2="125" y2="27" style="stroke: #000; stroke-width: 1" />
+    </svg>
+
+    <div class="cipher-container">
+      <input type="text" disabled id="encrypt-cipher">
+      <label>Cipher</label>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<div class="container-fluid d-flex justify-content-start gap-50 m-3 p-3">
+  <div class="aes-decrypt-container">
+    <h2>AES Decrypt</h2>
+
+    <div class="cipher-container">
+      <label>Cipher</label>
+      <input type="text" id="decrypt-cipher" autocomplete="off">
+    </div>
+
+    <svg height="28" width="50" xmlns="http://www.w3.org/2000/svg" class="arrow-1">
+      <line x1="5" y1="14" x2="45" y2="14" style="stroke: #000; stroke-width: 1" />
+      <line x1="40" y1="12" x2="45" y2="14" style="stroke: #000; stroke-width: 1" />
+      <line x1="40" y1="16" x2="45" y2="14" style="stroke: #000; stroke-width: 1" />
+    </svg>
+
+    <div class="key-container">
+      <label>Key</label>
+      <input type="text" id="decrypt-key" autocomplete="off">
+      <button class="btn btn-outline-secondary" id="auto-generate-decrypt-key-btn">Auto Generate</button>
+    </div>
+
+    <svg height="32" width="250" xmlns="http://www.w3.org/2000/svg" class="arrow-2">
+      <line x1="125" y1="5" x2="125" y2="27" style="stroke: #000; stroke-width: 1" />
+      <line x1="123" y1="22" x2="125" y2="27" style="stroke: #000; stroke-width: 1" />
+      <line x1="127" y1="22" x2="125" y2="27" style="stroke: #000; stroke-width: 1" />
+    </svg>
+
+    <div class="decrypt-block">
+      <p>Decrypt</p>
+    </div>
+
+    <svg height="32" width="250" xmlns="http://www.w3.org/2000/svg" class="arrow-3">
+      <line x1="125" y1="5" x2="125" y2="27" style="stroke: #000; stroke-width: 1" />
+      <line x1="123" y1="22" x2="125" y2="27" style="stroke: #000; stroke-width: 1" />
+      <line x1="127" y1="22" x2="125" y2="27" style="stroke: #000; stroke-width: 1" />
+    </svg>
+
+    <div class="plain-container">
+      <input type="text" disabled id="decrypt-plain">
+      <label>Plain</label>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block script %}
+<script src="/static/js/utils.js"></script>
+<script src="/static/js/aes.js"></script>
+{% endblock %}

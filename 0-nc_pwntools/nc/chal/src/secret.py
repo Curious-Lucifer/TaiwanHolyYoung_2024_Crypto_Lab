@@ -1,0 +1,1 @@
+FLAG = 'FLAG{Great!_You_learned_how_to_use_`nc`!}'

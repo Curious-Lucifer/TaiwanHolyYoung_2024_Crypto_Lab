@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="/static/style/index.css">
+{% endblock %}
+
+{% block acitve_ascii_bin_dec_hex %}active{% endblock %}
+
+{% block body %}
+<div class="container-fluid d-flex justify-content-start gap-50 m-3 p-3">
+  <div class="interactive-container width-250">
+    <div class="interactive-block">
+      <h2>ASCII</h2>
+      <textarea id="asciiDecimal-ascii"></textarea>
+    </div>
+
+    <div class="switch-container">
+      <img src="/static/img/switch.png" width="24">
+    </div>
+
+    <div class="interactive-block">
+      <h2>十進位</h2>
+      <textarea id="asciiDecimal-decimal"></textarea>
+    </div>
+  </div>
+
+  <div class="interactive-container width-550">
+    <div class="interactive-block">
+      <h2>十進位</h2>
+      <textarea id="binDecHex-dec"></textarea>
+    </div>
+
+    <div class="switch-container">
+      <img src="/static/img/switch.png" width="24">
+    </div>
+
+    <div class="d-flex gap-50">
+      <div class="interactive-block flex-fill">
+        <h2>二進位</h2>
+        <textarea id="binDecHex-bin"></textarea>
+      </div>
+      <div class="interactive-block flex-fill">
+        <h2>十六進位</h2>
+        <textarea id="binDecHex-hex"></textarea>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block script %}
+<script src="/static/js/utils.js"></script>
+<script src="/static/js/ascii-bin-dec-hex.js"></script>
+{% endblock %}

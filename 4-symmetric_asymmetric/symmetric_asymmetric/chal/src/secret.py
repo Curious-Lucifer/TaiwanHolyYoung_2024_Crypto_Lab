@@ -1,0 +1,1 @@
+FLAG = b'FLAG{It\'s_just_a_simple_system,_but_it\'s_actually_a_lot_more_complicated!}'

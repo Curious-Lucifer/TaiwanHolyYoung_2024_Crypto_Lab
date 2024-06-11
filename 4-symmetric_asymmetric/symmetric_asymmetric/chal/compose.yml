@@ -1,0 +1,5 @@
+services: 
+  symmetric-asymmetric-symmetric-asymmetric: 
+    build: .
+    ports: 
+      - 14000:20000

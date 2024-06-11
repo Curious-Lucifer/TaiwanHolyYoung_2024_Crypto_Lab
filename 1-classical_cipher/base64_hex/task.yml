@@ -1,0 +1,32 @@
+name: Base64 & Hex
+category: 1 - Classical Cipher
+description: |
+  寫一段 Python 來把以下的字串先 base64 decode 然後再從 hex string 轉成一般的 string
+
+  `NDY0YzQxNDc3YjYwNjI3OTc0NjU3MzYwNWYyNjVmNjA3Mzc0NzI2MDVmNjE3MjY1NWY2NDY5NjY2NjY1NzI2NTZlNzQ1ZjY5NmU1ZjUwNzk3NDY4NmY2ZTdk`
+author: Curious
+flag: FLAG{`bytes`_&_`str`_are_different_in_Python}
+hints: 
+  - |
+    在 Python 中需要先 `import base64` 然後使用 `base64.b64decode()` 來做 base64 decode，下面給一個範例
+
+    ```py
+    import base64
+
+    msg = 'SGVsbG8gV29ybGQ='
+    print(base64.b64decode(msg.encode()))
+    # 印出 Hello World
+    ```
+  - |
+    在 Python 中把 hex string 轉成一般的 string 可以用 `bytes.fromhex()`，下面給一個範例
+
+    ```py
+    msg = '48656c6c6f20576f726c64'
+    print(bytes.fromhex(msg).decode())
+    ```
+
+type: standard
+value: 500
+state: visible
+
+canonical_name: classical-cipher-base64-hex

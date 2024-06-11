@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="/static/style/index.css">
+<link rel="stylesheet" href="/static/style/xor.css">
+{% endblock %}
+
+{% block active_aes %}active{% endblock %}
+
+{% block body %}
+<div class="container-fluid d-flex justify-content-start gap-50 m-3 p-3">
+  <div class="xor-container">
+    <h2>XOR</h2>
+
+    <div class="message1-container">
+      <label>Message 1</label>
+      <input type="text" autocomplete="off" id="message1">
+    </div>
+
+    <div class="message2-container">
+      <label>Message 2</label>
+      <input type="text" autocomplete="off" id="message2">
+    </div>
+
+    <svg height="100" width="550" xmlns="http://www.w3.org/2000/svg" class="graph">
+      <line x1="125" y1="5" x2="125" y2="50" style="stroke: #000; stroke-width: 1" />
+      <line x1="425" y1="5" x2="425" y2="50" style="stroke: #000; stroke-width: 1" />
+      <line x1="125" y1="50" x2="425" y2="50" style="stroke: #000; stroke-width: 1" />
+      <line x1="275" y1="50" x2="275" y2="95" style="stroke: #000; stroke-width: 1" />
+      <line x1="273" y1="90" x2="275" y2="95" style="stroke: #000; stroke-width: 1" />
+      <line x1="277" y1="90" x2="275" y2="95" style="stroke: #000; stroke-width: 1" />
+
+      <line x1="275" y1="42" x2="275" y2="58" style="stroke: #000; stroke-width: 1" />
+      <circle r="8" cx="275" cy="50" fill="none" stroke="#000" stroke-width="1" />
+    </svg>
+
+    <div class="result-container">
+      <input type="text" disabled id="result">
+      <label>Result</label>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block script %}
+<script src="/static/js/utils.js"></script>
+<script src="/static/js/xor.js"></script>
+{% endblock %}

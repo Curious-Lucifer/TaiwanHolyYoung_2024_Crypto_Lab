@@ -1,0 +1,5 @@
+services: 
+  nc-pwntools-guess: 
+    build: .
+    ports: 
+      - 10002:20000

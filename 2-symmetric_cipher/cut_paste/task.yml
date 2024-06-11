@@ -1,0 +1,16 @@
+name: Cut & Paste
+category: 2 - Symmetric Cipher
+author: Curious
+connection_info: http://{ip}:12000
+flag: FLAG{why_do_you_have_so_much_money???}
+distfiles:
+  - ./chal
+  - ./dist
+
+type: standard
+value: 500
+state: visible
+
+canonical_name: symmetric-cipher-cut-paste
+
+compose: ./chal/compose.yml

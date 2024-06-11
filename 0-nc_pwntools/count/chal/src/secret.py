@@ -1,0 +1,1 @@
+FLAG = 'FLAG{You_can_do_it_manually,_but_...}'

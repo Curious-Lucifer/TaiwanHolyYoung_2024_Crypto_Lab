@@ -1,0 +1,18 @@
+name: Caesar Cipher
+category: 1 - Classical Cipher
+description: |
+  把 `cipher.txt` 裡面的內容解開之後丟到 Crypto Playground 的 Get Hash Flag 裡拿 flag
+author: Curious
+connection_info: http://{ip}:50000/get-hash-flag
+flag: FLAG{e241bb8575436ca05489e433b3f0782bf30c5ec286459cccd3a0830e718b6ded}
+distfiles:
+  - ./dist
+hints:
+  - https://cryptii.com/pipes/caesar-cipher
+
+type: standard
+value: 500
+state: visible
+
+canonical_name: classical-cipher-caesar-cipher
+
