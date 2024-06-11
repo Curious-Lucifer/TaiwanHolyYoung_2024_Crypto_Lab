@@ -8,7 +8,7 @@ from CTFdTools.challenge import Challenge
 from CTFdTools.ctfd import CTFd
 
 
-load_dotenv('.env')
+load_dotenv('.env.dev')
 ctfd = CTFd(os.getenv('BASE_URL'), os.getenv('API_KEY'))
 
 challenges_path = []
