@@ -17,7 +17,7 @@ for root, _, files in os.walk('.'):
         challenges_path.append(root)
 
 challenges = [
-    Challenge(challenge_path, '34.80.39.230', ctfd)
+    Challenge(challenge_path, os.getenv('CHALLENGE_SERVER'), ctfd)
     for challenge_path in challenges_path
 ]
 
