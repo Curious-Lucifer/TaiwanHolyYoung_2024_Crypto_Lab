@@ -1,0 +1,5 @@
+services:
+  cut-paste:
+    build: .
+    ports:
+      - 10000:5000

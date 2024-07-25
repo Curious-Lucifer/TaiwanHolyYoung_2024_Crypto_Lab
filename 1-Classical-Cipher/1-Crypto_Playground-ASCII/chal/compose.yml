@@ -1,0 +1,5 @@
+services:
+  crypto-playground:
+    build: .
+    ports:
+      - 8000:80

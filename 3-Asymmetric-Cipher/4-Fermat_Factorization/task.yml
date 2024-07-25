@@ -1,0 +1,13 @@
+name: 4 - Fermat Factorization
+category: 3 - Asymmetric Cipher
+author: Curious
+flag: FLAG{Not_enough_space_here...}
+distfiles: 
+  - ./chal
+  - ./dist
+
+type: standard
+value: 300
+state: visible
+
+canonical_name: asymmetric-cipher-fermat-factorization

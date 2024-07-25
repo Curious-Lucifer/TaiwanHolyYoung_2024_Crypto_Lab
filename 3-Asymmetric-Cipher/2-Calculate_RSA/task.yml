@@ -1,0 +1,15 @@
+name: 2 - Calculate RSA（必做）
+category: 3 - Asymmetric Cipher
+description: |
+  如果有以下的參數，想辦法還原 `m`（也就是 `c` 對應的明文）
+
+  - `p` : `9835210563207632773`
+  - `q` : `10100395802203591453`
+  - `e` : `65537`
+  - `c` : `38901730400489769669866798139902101966`
+author: Curious
+flag: FLAG{^_^}
+
+type: standard
+value: 300
+state: visible

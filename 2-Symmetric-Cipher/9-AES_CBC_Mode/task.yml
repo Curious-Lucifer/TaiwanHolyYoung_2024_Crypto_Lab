@@ -1,0 +1,38 @@
+name: 9 - AES CBC Mode
+category: 2 - Symmetric Cipher
+description: |
+  `cipher` 是一段被 AES CBC Mode 加密後的密文，加密的金鑰是 `key`，嘗試用 Python 把 `cipher` 解密
+
+  - `cipher` : `af6ab08a9380c038328bec3c47e70b915bbf4faf0e4b72db5f56d274bd6be5458552b6023e64f10a492bb88e839e51516b50903363bc637a1fe2550317392564`
+  - `key` : `d1e138810051ac8deaef9fd33c969e080003d3f87d264dd431190f0e7795528b`
+  - `iv` : `25741419227aece3cb4f715f1c2b3878`
+author: Curious
+flag: FLAG{It's_better_to_know_to_use_Python_to_encrypt/decrypt}
+hints: 
+  - |
+    如果用要用 Python 來做 AES 的加解密，首先要先 install `PyCryptodome`
+
+    ```
+    pip install pycryptodome
+    ```
+
+    接著用以下的範例程式碼來說明要怎麼加解密
+
+    ```py
+    from Crypto.Cipher import AES
+
+    # 金鑰和 iv 需要是 bytes 型別
+    key = bytes.fromhex(...)
+    iv = bytes.fromhex(...)
+    aes = AES.new(key, AES.MODE_CBC, iv=iv)
+
+    # 這是把 plain 用剛剛指定的 key 加密後放到 cipher 中，其中 plain 和 cipher 都需要是 bytes 型別
+    cipher = aes.encrypt(plain)
+
+    # 這是把 cipher 用剛剛指定的 key 解密後放到 plain 中，其中 cipher 和 plain 都需要是 bytes 型別
+    plain = aes.decrypt(cipher)
+    ```
+
+type: standard
+value: 200
+state: visible

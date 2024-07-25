@@ -1,0 +1,16 @@
+name: 3 - Baby RSA（必做）
+category: 3 - Asymmetric Cipher
+description: |
+  嘗試利用以下參數破解 `c`
+
+  - `n` : `13910994564373802167`
+  - `e` : `65537`
+  - `c` : `1407190981767527409`
+author: Curious
+flag: FLAG{><}
+hints: 
+  - http://factordb.com/
+
+type: standard
+value: 300
+state: visible

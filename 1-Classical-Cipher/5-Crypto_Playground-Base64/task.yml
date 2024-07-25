@@ -1,0 +1,13 @@
+name: 5 - Crypto Playground - Base64（必做）
+category: 1 - Classical Cipher
+description: |
+  把以下的字串拿去做 base64 解碼
+
+  `RkxBR3tCYXNlNjRfaXNfbW9yZV9vZnRlbl91c2VkX2luX3JlYWxpdHl9`
+author: Curious
+connection_info: http://{server}:8000/base64
+flag: FLAG{Base64_is_more_often_used_in_reality}
+
+type: standard
+value: 100
+state: visible

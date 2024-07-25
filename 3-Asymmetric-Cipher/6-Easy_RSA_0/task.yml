@@ -1,0 +1,14 @@
+name: 6 - Easy RSA 0
+category: 3 - Asymmetric Cipher
+description: |
+  嘗試利用以下參數破解 `c`
+
+  - `n` : `2639362258825246588480470347939064671401603842072135672799`
+  - `e` : `65537`
+  - `c` : `1746618984754679181914163060955061486968283106432500087220`
+author: Curious
+flag: FLAG{3_Primes?}
+
+type: standard
+value: 300
+state: visible

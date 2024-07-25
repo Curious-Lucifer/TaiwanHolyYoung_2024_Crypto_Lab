@@ -1,0 +1,13 @@
+name: 3 - Crypto Playground - Hex String（必做）
+category: 1 - Classical Cipher
+description: |
+  把以下的 hex string 轉成一般被 ASCII 編碼後的字串
+
+  `464c41477b495f6b6e6f775f7468655f616e737765725f69735f6062797465732e66726f6d686578602e2e2e7d`
+author: Curious
+connection_info: http://{server}:8000/hex-string
+flag: FLAG{I_know_the_answer_is_`bytes.fromhex`...}
+
+type: standard
+value: 100
+state: visible

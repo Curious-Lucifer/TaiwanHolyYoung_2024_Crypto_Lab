@@ -1,0 +1,20 @@
+name: 1 - Crypto Playground - ASCII & 進位轉換（必做）
+category: 1 - Classical Cipher
+description: |
+  把以下三段數字轉成 ASCII 編碼後的字串
+
+  `70 76 65 71 123 74 117 115 116 95`
+
+  `1110011 1101111 1101101 1100101 1011111 1100011 1101111`
+
+  `6e 76 65 72 73 69 6f 6e 7e 7e 7e 7d`
+author: Curious
+connection_info: http://{server}:8000/ascii
+flag: FLAG{Just_some_conversion~~~}
+
+type: standard
+value: 100
+state: visible
+
+canonical_name: classical-cipher-ascii
+compose: ./chal/compose.yml

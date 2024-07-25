@@ -1,0 +1,14 @@
+name: 1 - Crypto Playground - AES（必做）
+category: 2 - Symmetric Cipher
+description: |
+  `cipher` 是一段被 AES 加密後的密文，加密的金鑰是 `key`，解密 `cipher` 並嘗試不同的 `key`、`cipher` 對解密有什麼影響（同樣也可以試試看不同的 `key` 和 `plain` 對加密有什麼影響）
+
+  - `cipher` : `beb500cb0298d5a427d3c6532fa0d88e`
+  - `key` : `e4cb2aa8ff51a7209a923d59932b5841`
+author: Curious
+connection_info: http://{server}:8000/aes/aes
+flag: FLAG{A--E--S}
+
+type: standard
+value: 200
+state: visible

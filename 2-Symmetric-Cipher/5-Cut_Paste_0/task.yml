@@ -1,0 +1,18 @@
+name: 5 - Cut & Paste - 0（必做）
+category: 2 - Symmetric Cipher
+description: |
+  理解 Cut & Paste 後端的所有邏輯
+author: Curious
+connection_info: http://{server}:10000
+flag: FLAG{Now_you_know_Flask!!!}
+distfiles:
+  - ./chal
+  - ./dist
+
+type: standard
+value: 200
+state: visible
+
+canonical_name: symmetric-cipher-cut-paste
+
+compose: ./chal/compose.yml

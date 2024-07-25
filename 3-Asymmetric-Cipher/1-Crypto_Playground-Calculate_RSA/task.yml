@@ -1,0 +1,15 @@
+name: 1 - Crypto Playground - Calculate RSA（必做）
+category: 3 - Asymmetric Cipher
+description: |
+  首先嘗試照著 Crypto Playground 的 RSA 步驟一步一步（每一步都要讓右邊的檢查通過才能繼續下一步）把字元 `w` 加密後解密
+
+  接著嘗試把要加密的東西從 `w` 變成 `www` 後再操作一次
+
+  操作完成後就可以繳交這題的 flag : `FLAG{w->www}`
+author: Curious
+connection_info: http://{server}:8000/rsa/rsa
+flag: FLAG{w->www}
+
+type: standard
+value: 300
+state: visible

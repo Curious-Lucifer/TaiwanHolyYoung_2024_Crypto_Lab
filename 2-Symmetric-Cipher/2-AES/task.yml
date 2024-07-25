@@ -1,0 +1,36 @@
+name: 2 - AES（必做）
+category: 2 - Symmetric Cipher
+description: |
+  `cipher` 是一段被 AES 加密後的密文，加密的金鑰是 `key`，用 Python 來解密 `cipher`
+
+  - `cipher` : `75924759583675f4a56c2c322c72be86`
+  - `key` : `77e9ed71d1d4ea27816aa0538c091f14`
+author: Curious
+flag: FLAG{PyCrypt...}
+hints:
+  - |
+    如果用要用 Python 來做 AES 的加解密，首先要先 install `PyCryptodome`
+
+    ```
+    pip install pycryptodome
+    ```
+
+    接著用以下的範例程式碼來說明要怎麼加解密
+
+    ```py
+    from Crypto.Cipher import AES
+
+    # 金鑰需要是 bytes 型別
+    key = bytes.fromhex(...)
+    aes = AES.new(key, AES.MODE_ECB)
+
+    # 這是把 plain 用剛剛指定的 key 加密後放到 cipher 中，其中 plain 和 cipher 都需要是 bytes 型別
+    cipher = aes.encrypt(plain)
+
+    # 這是把 cipher 用剛剛指定的 key 解密後放到 plain 中，其中 cipher 和 plain 都需要是 bytes 型別
+    plain = aes.decrypt(cipher)
+    ```
+
+type: standard
+value: 200
+state: visible

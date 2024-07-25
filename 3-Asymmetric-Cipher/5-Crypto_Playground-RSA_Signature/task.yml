@@ -1,0 +1,15 @@
+name: 5 - Crypto Playground - RSA Signature
+category: 3 - Asymmetric Cipher
+description: |
+  首先嘗試照著 Crypto Playground 的 RSA Signature 步驟一步一步（每一步都要讓右邊的檢查通過才能繼續下一步）把字元 `w` 簽張後驗證簽章
+
+  接著嘗試把要簽張的東西從 `w` 變成 `www` 後再操作一次
+
+  操作完成後就可以繳交這題的 flag : `FLAG{w->www_AGAIN!!!}`
+author: Curious
+connection_info: http://{server}:8000/rsa/rsa-signature
+flag: FLAG{w->www_AGAIN!!!}
+
+type: standard
+value: 300
+state: visible

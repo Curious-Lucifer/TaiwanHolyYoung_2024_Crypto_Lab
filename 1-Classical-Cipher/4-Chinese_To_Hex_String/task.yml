@@ -1,0 +1,20 @@
+name: 4 - Chinese To Hex String（必做）
+category: 1 - Classical Cipher
+description: |
+  把以下的中文用 Python 轉換成電腦內儲存原始數據的 hex string，再把這個 hex string 放到 `FLAG{}` 的大括號之間（hex string 的英文全部都小寫）
+
+  `蹦蹦炸彈`
+author: Curious
+flag: FLAG{e8b9a6e8b9a6e782b8e5bd88}
+hints:
+  - |
+    在 Python 中把 `bytes` 這種電腦內儲存的原始數據轉成 hex string（型別是 `str`）可以用 `.hex()` 這個 method
+
+    ```py
+    payload = b'\xe5\x8e\x9f\xe7\xa5\x9e\xe5\x95\x9f\xe5\x8b\x95'
+    payload = payload.hex()
+    ```
+
+type: standard
+value: 100
+state: visible

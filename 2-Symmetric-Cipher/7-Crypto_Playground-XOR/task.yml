@@ -1,0 +1,17 @@
+name: 7 - Crypto Playground - XOR
+category: 2 - Symmetric Cipher
+description: |
+  已知
+
+  - `A` ⊕ `FLAG` = `a3eb43a265fb02a62f6db2e7bf749b6aab4350fb004031c920d1`
+  - `FLAG` ⊕ `B` = `e322463f629716f9c07bd310a1ffcd84c5bcf2baf736b7b749b8`
+  - `A` ⊕ `B` ⊕ `FLAG` = `068544da7c287b00967914a875e53999319fe507df44af1e5614`
+
+  求 `FLAG`
+author: Curious
+connection_info: http://{server}:8000/aes/xor
+flag: FLAG{Do_you_know_`GF(2)`?}
+
+type: standard
+value: 200
+state: visible

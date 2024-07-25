@@ -1,0 +1,15 @@
+name: 8 - Caesar Cipher With Python
+category: 1 - Classical Cipher
+description: |
+  `cipher.txt` 裡面是一段被凱薩加密的數據（和上一題一模一樣的數據），這題的目標是用 Python 把這段數據解密，解密後的操作和上一題一樣
+author: Curious
+connection_info: http://{server}:8000/get-flag
+flag: FLAG{e241bb8575436ca05489e433b3f0782bf30c5ec286459cccd3a0830e718b6ded}
+distfiles:
+  - ./dist
+
+type: standard
+value: 100
+state: visible
+
+canonical_name: classical-cipher-caesar

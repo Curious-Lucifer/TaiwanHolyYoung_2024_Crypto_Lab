@@ -1,0 +1,14 @@
+name: 3 - Crypto Playground - AES ECB Mode
+category: 2 - Symmetric Cipher
+description: |
+  `cipher` 是一段被 AES ECB Mode 加密後的密文，加密的金鑰是 `key`，嘗試把 `cipher` 解密
+
+  - `cipher` : `8d8f543098319a54c0c44c265a50bc2f3ff33f67cc44c6c4f992bdc0b0adcbc86aece1f2f0b59772a59c5060d9669d0b`
+  - `key` : `872b456c9b4e3b320555e62b6ad9ee32`
+author: Curious
+connection_info: http://{server}:8000/aes/aes-ecb-mode
+flag: FLAG{Plain's_length_needs_to_be_multiple_of_16}
+
+type: standard
+value: 200
+state: visible

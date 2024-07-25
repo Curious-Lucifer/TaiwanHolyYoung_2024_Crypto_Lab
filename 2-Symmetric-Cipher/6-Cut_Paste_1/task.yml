@@ -1,0 +1,11 @@
+name: 6 - Cut & Paste - 1（必做）
+category: 2 - Symmetric Cipher
+description: |
+  嘗試更改 money 來拿到 flag
+author: Curious
+connection_info: http://{server}:10000
+flag: FLAG{why_do_you_have_so_much_money???}
+
+type: standard
+value: 200
+state: visible

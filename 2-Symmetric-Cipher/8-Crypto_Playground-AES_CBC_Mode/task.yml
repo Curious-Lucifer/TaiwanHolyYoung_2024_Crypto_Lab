@@ -1,0 +1,15 @@
+name: 8 - Crypto Playground - AES CBC Mode
+category: 2 - Symmetric Cipher
+description: |
+  `cipher` 是一段被 AES CBC Mode 加密後的密文，加密的金鑰是 `key`，嘗試把 `cipher` 解密
+
+  - `cipher` : `829ad9df660fd928274eb552bc6bc88dd00a62c48d221f37b427a0db7b6d9e5dbcf0f8a52d156fa0fa881dc46eb5555b`
+  - `key` : `62bdc4885ca8a8be1d1e8826a2187528`
+  - `iv` : `7ae66a4b7e87a6d374ce66e73a112bf0`
+author: Curious
+connection_info: http://{server}:8000/aes/aes-cbc-mode
+flag: FLAG{AES_CBC_Mode_needs_padding_too!}
+
+type: standard
+value: 200
+state: visible

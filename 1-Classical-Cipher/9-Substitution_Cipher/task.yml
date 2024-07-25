@@ -1,0 +1,17 @@
+name: 9 - Substitution Cipher（必做）
+category: 1 - Classical Cipher
+description: |
+  `cipher.txt` 裡面是一段被替換式加密後的數據，把這段數據解密後（不需要分析這段數據解密後在講什麼，理論上解密後會拿到一段是全大寫的數據）直接丟到 Crypto Playground 的 Get Flag 裡拿 flag
+author: Curious
+connection_info: http://{server}:8000/get-flag
+flag: FLAG{799ff92f4a72f5092492e29edc8f40be782aa7a7653778b70fa06f9899318855}
+distfiles:
+  - ./dist
+hints:
+  - https://www.guballa.de/substitution-solver
+
+type: standard
+value: 100
+state: visible
+
+canonical_name: classical-cipher-substitution

@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC:wght@300;400;700&display=swap');
+
+:root {
+  --bs-font-sans-serif: 'LXGW WenKai Mono TC', monospace;
+  --bs-font-monospace: 'LXGW WenKai Mono TC', monospace;
+}

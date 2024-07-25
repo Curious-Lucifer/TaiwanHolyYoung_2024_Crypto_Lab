@@ -1,0 +1,36 @@
+name: 4 - AES ECB Mode
+category: 2 - Symmetric Cipher
+description: |
+  `cipher` 是一段被 AES ECB Mode 加密後的密文，加密的金鑰是 `key`，用 Python 把 `cipher` 解密
+
+  - `cipher` : `6b2f26db534ee26ab1c987cea73a2fecd1a3f8335c50412ffa785d3ce5b90ad310a064dfa4bf824bc7968d876c9e5d6917e1157fc27a29c2e042a82f08ed6c96`
+  - `key` : `85f1c9f80a5b9e440380cf9b02b31ff46de4f864cd7c2ba32f7ec2881b07d71c`
+author: Curious
+flag: FLAG{Check_plain's_length_before_AES_ECB_Encrypt~}
+hints: 
+  - |
+    如果用要用 Python 來做 AES 的加解密，首先要先 install `PyCryptodome`
+
+    ```
+    pip install pycryptodome
+    ```
+
+    接著用以下的範例程式碼來說明要怎麼加解密
+
+    ```py
+    from Crypto.Cipher import AES
+
+    # 金鑰需要是 bytes 型別
+    key = bytes.fromhex(...)
+    aes = AES.new(key, AES.MODE_ECB)
+
+    # 這是把 plain 用剛剛指定的 key 加密後放到 cipher 中，其中 plain 和 cipher 都需要是 bytes 型別
+    cipher = aes.encrypt(plain)
+
+    # 這是把 cipher 用剛剛指定的 key 解密後放到 plain 中，其中 cipher 和 plain 都需要是 bytes 型別
+    plain = aes.decrypt(cipher)
+    ```
+
+type: standard
+value: 200
+state: visible
