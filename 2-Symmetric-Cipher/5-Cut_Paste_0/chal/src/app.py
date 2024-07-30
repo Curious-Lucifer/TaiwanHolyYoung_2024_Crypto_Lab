@@ -76,7 +76,7 @@ def get_flag():
 
     if userdata['money'] < 10000:
         return {'status': 'success',
-                'msg': 'Your money is not enough to be the flag !'}
+                'msg': 'Your money is not enough to buy the flag !'}
     return {'status': 'success', 'msg': f'Flag : <code>{secret.FLAG}</code>'}
 
 
