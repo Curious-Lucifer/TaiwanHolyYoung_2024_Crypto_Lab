@@ -1,10 +1,9 @@
 # Mac
 .DS_Store
 
-
 # Python
 __pycache__
+venv
 
-
-# Sensitive Data
-./secret.py
+# CTFd
+CTFd*
